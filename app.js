@@ -21,6 +21,10 @@ app.get('/contact', function (req, res) {
   res.redirect('/contact.html');
 });
 
+app.get('/info', function(req, res) {
+    res.download('public/sample.pdf');
+});
+
 
 
 app.listen(5000, function() {
